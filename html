@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiobook Reader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Audiobook Reader</h1>
+    </header>
+    <main>
+        <section id="library">
+            <h2>Library</h2>
+            <ul id="audiobook-list"></ul>
+    <button id="upload-document">Upload Document or Book</button>
+    <ul id="document-list"></ul>
+</section>
+
+        </section>
+       <section id="player">
+    <h2>Player</h2>
+    <audio id="audio-player" controls>
+        Your browser does not support the audio element.
+    </audio>
+    <div>
+        <button id="play-btn">Play</button>
+        <button id="pause-btn">Pause</button>
+        <button id="stop-btn">Stop</button>
+    </div>
+</section>
+
+
+            <!-- Audio player controls will go here -->
+        </section>
+        <section id="bookmarks">
+            <h2>Bookmarks & Notes</h2>
+<button id="add-bookmark">Add Bookmark</button>
+<ul id="bookmark-list"></ul>
+<textarea id="note-text" placeholder="Add your notes here..."></textarea>
+<button id="save-note">Save Note</button>
+<ul id="note-list"></ul>
+<input type="datetime-local" id="reminder-time">
+<button id="set-reminder">Set Reminder</button>
+
+
+
+            <!-- Bookmarks and notes will go here -->
+        </section>
+    </main>
+    <!-- Link JavaScript file -->
+    <script src="script.js"></script>
+
+
+</body>
+</html>
